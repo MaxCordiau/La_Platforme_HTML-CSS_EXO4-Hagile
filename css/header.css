@@ -1,0 +1,67 @@
+/* GENERAL */
+
+/* *{
+    font-family: 'Open Sans';
+} */
+
+/* Header */
+
+header {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: auto; */
+    /* width: 80%; */
+    margin: 0 20px auto;
+    margin-right: 20px;
+    font-family: "Open Sans", Sans-serif;
+}
+.fa-solid, .fas {
+    display: none;
+    font-weight: 900;
+}
+.fa-solid:hover, .fas:hover {
+    display: none;
+    color: #F17124;
+    font-weight: 900;
+}
+header a img{
+    width: 130px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul a:hover{
+    transition: 0.4s;
+    color: orange;
+}
+
+/* Responsive tablettes */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Passage à l'affichage en colonnes pour les écrans de largeur inférieure à 768 pixels */
+        align-items: stretch; /* Ajustement pour occuper toute la largeur */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Affichage des éléments du menu en colonnes */
+        gap: 10px; /* Réduction de l'espacement entre les éléments du menu pour les tablettes */
+    }
+}
+
+/* Responsive téléphones */
+@media only screen and (max-width: 480px) {
+    header {
+        margin: 0 10px auto; /* Ajustement de la marge pour les écrans de largeur inférieure à 480 pixels */
+    }
+}

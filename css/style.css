@@ -1,0 +1,550 @@
+/*  Responsive */
+/* Media query pour un affichage en colonnes sur des écrans plus petits */
+@import-fonte { 
+    font-family: 'roboto';
+    src: url('C:\Users\Family\Documents\Platforme Formation\2 HTML CSS\EXO3\Fonts\roboto') format('roboto'),
+    /* Ajoutez d'autres formats de police si nécessaire */
+}
+/* GENERAL */
+
+.btn{
+    text-decoration: none;
+    border: 1.5px solid #F17124;
+    color: #F17124;
+    background-color: transparent;
+    padding: 10px 40px 10px 040px;
+    font-size: 15px;
+    border-radius: 30px;
+    padding-inline: 30px 30px;
+    display: table-cell;
+    font-family: "Kanit", Sans-serif;
+    font-weight: 400;
+}
+.btn:hover{
+        transition: 0.4s;
+        color: #fff;
+        border-style: none;
+        background: linear-gradient(to right, #f07728, #ffcc68); /* Dégradé au survol */
+}
+
+/* Header */
+header {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: auto; */
+    /* width: 80%; */
+    margin: 0 20px auto;
+    margin-right: 20px;
+    font-family: "Open Sans", Sans-serif;
+}
+#burgermenu{
+    display: none;
+    font-weight: 900;
+}
+#burgermenu:hover{
+    display: none;
+    color: #F17124;
+    font-weight: 900;
+}
+header a img{
+    width: 130px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul a:hover{
+    transition: 0.4s;
+    color: orange;
+}
+
+/* SECTION 1 */
+#S1 {
+    background-color: #fafbfb;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    transition: 300ms;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between; /* Pour aligner les éléments sur l'axe horizontal */
+    align-items: center; /* Pour aligner les éléments sur l'axe vertical */
+}
+
+#S1 h2 {
+    background-color: #fafbfb;
+    color: #F17124;
+    font-family: "Kanit", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%; /* Pour occuper 100% de la largeur */
+    margin-bottom: 20px;
+}
+
+#S1 article {
+    width: calc(50% - 20px); 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#S1 img {
+    width: 100%; 
+    max-width: 550px;
+    height: auto;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#S1 p {
+    background-color: #fafbfb;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 454px;
+}
+/* #S1 {
+    background-color: #fafbfb;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    transition: 300ms;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#S1 h2 {
+    background-color: #fafbfb;
+    color: #F17124;
+    font-family: "Kanit", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+#S1 article {
+    margin-left: 200px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#S1 img {
+    margin-left: 200px;
+    width: 100%;
+    max-width: 550px; 
+    height: auto;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#S1 p {
+    background-color: #fafbfb;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 454px;
+} */
+/* SECTION 2 */
+#S2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 348px;
+    aspect-ratio: auto 348 / 190;
+    /* height: 190px; */
+}
+
+/* SECTION 3 */
+#S3 article{
+    margin: auto;
+    background-color: #F17124;
+    padding: 50px;
+}
+#S3 p{
+    text-align: center;
+    background-color: #F17124;
+    margin-bottom: 0.9rem;
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 17px;
+    line-height: 1.6em;
+    max-width: 770px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SECTION 4 */
+
+/* S4G */
+#S4 div{    
+    /* width: 80%; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 50px;
+    color: #000000;
+    font-family: "Open Sans", Sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#article1 h2{
+    margin: 0;  
+    background: url('https://hagile.fr/wp-content/uploads/2020/09/01.png');
+    background-repeat: no-repeat;
+    max-width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 126px;
+    padding-top: 106px;
+    margin: 0px;
+}
+#article2 h2{
+    margin: 0;  
+    background: url('https://hagile.fr/wp-content/uploads/2020/09/02.png');
+    background-repeat: no-repeat;
+    max-width: 100px;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 156px;
+    padding-top: 106px;
+    margin: 0px;
+}
+#article3 h2{
+    margin: 0;  
+    background: url('https://hagile.fr/wp-content/uploads/2020/09/03.png');
+    background-repeat: no-repeat;
+    max-width: 100px;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 154px;
+    padding-top: 60px;
+    margin: 0px;
+}
+
+/* Formulaire de contact */
+
+.form-group {
+    margin-bottom: 20px;
+    background-color: #343A40;
+    color: white;
+    color-interpolation-filters: 343A40;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #343A40;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #343A40;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SECTION 5 */
+
+#S5{
+    min-height: 482px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-image: url('https://hagile.fr/wp-content/uploads/2020/09/Photo-accueil-scaled.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#S5 h3{
+    padding-top: 150px;
+    max-width: 328px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+/* SECTION 6 */
+
+#S6 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+#articleM1,
+#articleM2 {
+    flex: 1;
+    max-width: calc(50% - 20px); 
+}
+
+#articleM1,
+#articleM2 {
+    background: #343a40;
+    padding: 20px;
+}
+
+#S6 h2 {
+    color: #f07728;
+    margin-bottom: 20px;
+}
+
+#S6 label {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    margin-left: 10px;
+}
+
+/* #societe, #nom, #email, #telephone, #demande, #acceptation */
+#societe,
+#nom,
+#email,
+#telephone,
+#demande,
+#acceptation {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #343a40;
+}
+
+#acceptation {
+    width: auto; 
+    margin-top: 8px;
+    height: 20px;
+}
+
+#articleM1 h2,
+#articleM2 p,
+#articleM2 a {
+    margin-left: 0; 
+}
+#articleM2 {
+    margin-bottom: 530px;
+}
+#articleM2 p{
+    line-height: 1.6em;
+    color: #C9C9C9;
+}
+#articleM2 .pm1{
+    color: #f07728;
+}
+a{
+    color: #f07728;
+}
+
+/* Footer */
+
+footer{
+    margin: 0px;
+}
+/* Copyright */
+footer p{
+    font-family: "Open Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+    color: #F17124;
+    background-color: #b4afaf69;
+}
+footer a{
+    font-family: "Open Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: none;
+    text-decoration: none;
+    color: #F17124;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+/* Responsive tablettes */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    header nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    header nav{
+        display: none;
+    }
+    #burgermenu{
+        display: block;
+        text-align: end;
+    }
+    #S1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    #S1 article {
+        flex: 1;
+        margin: 0 20px;
+    }
+    #S1 img {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    #S2 img {
+        max-width: 100%; 
+    }
+    #S3 article {
+        padding: 20px; 
+    }
+    #S3 p {
+        font-size: 16px;
+    }
+    #S4 div {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+    #article1 h2,
+    #article2 h2,
+    #article3 h2 {
+        padding: 15px; 
+        max-width: 80px; 
+    }
+    #S5 h3 {
+        background-image: unset;
+        padding-top: 50px; 
+        max-width: 100%; 
+        padding-left: 10px; 
+    }
+    #S6 {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    #articleM1,
+    #articleM2 {
+        max-width: 100%; 
+        margin-bottom: 20px; 
+    }
+    footer p,
+    footer a {
+        font-size: 12px; 
+        padding: 8px;
+    }
+}
+
+/* Responsive téléphones */
+@media only screen and (max-width: 480px) {
+    header {
+        margin: 0 10px auto; 
+    }
+    nav{
+        display: none;
+    }
+    #burgermenu{
+        display: block;
+        text-align: end;
+    }
+    #section2 img{
+        width:100%;
+    }
+    #S1 h2 {
+        font-size: 24px; 
+    }
+    #S1 p {
+        font-size: 14px; 
+    }
+    #S1 img {
+        width: 100%; 
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    #S2 img {
+        max-width: 100%; 
+    }
+    #S3 article {
+        padding: 15px; 
+    }
+    #S3 p {
+        font-size: 14px; 
+    }
+    #S4 div {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+    #article1 h2,
+    #article2 h2,
+    #article3 h2 {
+        padding: 10px; 
+        max-width: 60px; 
+    }
+    #S5 h3 {
+        padding-top: 50px; 
+        max-width: 90%; 
+    }
+    #S6 {
+        flex-direction: column; 
+    }
+    #articleM1,
+    #articleM2 {
+        max-width: 100%; 
+    }
+    #articleM2 {
+        margin-bottom: 20px;
+    }
+    footer p,
+    footer a {
+        font-size: 10px; 
+        padding: 6px;
+    }
+}
+

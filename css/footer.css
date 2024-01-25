@@ -1,0 +1,46 @@
+/* GENERAL */
+
+footer{
+    margin: 0px;
+}
+
+/* Copyright */
+
+
+
+footer p{
+    font-family: "Open Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+    color: #F17124;
+    background-color: #b4afaf69;
+}
+footer a{
+    font-family: "Open Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: none;
+    text-decoration: none;
+    color: #F17124;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+/* Responsive tablettes */
+@media only screen and (max-width: 768px) {
+    footer p,
+    footer a {
+        font-size: 12px; /* Ajustement de la taille de police pour les tablettes */
+        padding: 8px; /* Ajustement de l'espacement pour les tablettes */
+    }
+}
+/* Responsive téléphones */
+@media only screen and (max-width: 480px) {
+    footer p,
+    footer a {
+        font-size: 10px; /* Ajustement de la taille de police pour les téléphones */
+        padding: 6px; /* Ajustement de l'espacement pour les téléphones */
+    }
+}
